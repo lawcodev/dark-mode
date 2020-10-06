@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #F1F1F1;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: #222222;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.container {
+  width: 100vw;
+}
+
+nav {
+  background: #fefefe;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  transition: .3s ease all;
+}
+nav .enlaces {
+  display: flex;
+}
+
+nav .enlaces a {
+  margin-right: 40px;
+}
+nav .enlaces a:hover {
+  color:#707070;
+}
+.switch {
+  background: #343d5b;
+  border-radius: 10em;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+}
+
+.switch::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #f1f1f1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 10em;
+}
+.switch.active {
+  background: orange;
+  color: #000;
+}
+.switch.active::after {
+  right: 0;
+  left: unset;
+}
+.switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: #fff;
+}
+/* Modo oscuro */
+body.dark nav a {
+  color: #c8c8c8;
+}
+body.dark h1 {
+  color: #c8c8c8;
+}
+body.dark h2 {
+  color: #c8c8c8;
+}
+body.dark nav a:hover {
+  color: #fefefe;
+}
+body.dark {
+  background: #111111;
+}
+body.dark nav {
+  background: #222222;
+}
